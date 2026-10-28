@@ -1,0 +1,15 @@
+{
+  "name": "orviqa",
+  "description": "Free tools from Orviqa for open-source maintainers.",
+  "owner": {
+    "name": "Orviqa",
+    "url": "https://orviqa.dev"
+  },
+  "plugins": [
+    {
+      "name": "orviqa-lite",
+      "source": "./",
+      "description": "Is your open-source repo ready to promote? Health check, README audit and evidence-backed positioning, run locally."
+    }
+  ]
+}
