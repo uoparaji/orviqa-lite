@@ -33,20 +33,39 @@ claude plugin install orviqa-lite@orviqa
 
 Then, inside your repository, ask: "Is this repo ready to promote?"
 
-### Other agents
+### Gemini CLI
 
-The skill uses the open [Agent Skills](https://agentskills.io) `SKILL.md`
-format. Copy `skills/orviqa-lite/` into your agent's skills folder (see its
-documentation for the path).
-
-If your agent does not load skills, put the folder in your repository and add
-this line to `AGENTS.md`, `GEMINI.md`, your Cursor rules, or your agent's
-instructions file:
-
+```bash
+gemini extensions install https://github.com/uoparaji/orviqa-lite
 ```
-When asked to audit the README, check launch readiness, or write the project
-description, follow the instructions in orviqa-lite/SKILL.md.
+
+### Codex, Copilot, Cursor, OpenCode, Amp, Goose
+
+These agents load [Agent Skills](https://agentskills.io) from `.agents/skills`.
+Install for every project:
+
+```bash
+git clone --depth 1 https://github.com/uoparaji/orviqa-lite /tmp/orviqa-lite
+mkdir -p ~/.agents/skills
+cp -R /tmp/orviqa-lite/skills/orviqa-lite ~/.agents/skills/
 ```
+
+Or for one repository only, copy it into `.agents/skills/` at the repository
+root instead.
+
+### Windsurf, Cline, Kiro
+
+Same folder, different place. Copy `skills/orviqa-lite/` into:
+
+| Agent | One repository | Every project |
+| --- | --- | --- |
+| Windsurf | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` |
+| Cline | `.cline/skills/` | `~/.cline/skills/` |
+| Kiro | `.kiro/skills/` | `~/.kiro/skills/` |
+
+Then, inside your repository, ask: "Is this repo ready to promote?" Some agents
+also let you call it directly, for example `/orviqa-lite` in Copilot, Cursor and
+Kiro, or `$orviqa-lite` in Codex.
 
 ## Requirements
 

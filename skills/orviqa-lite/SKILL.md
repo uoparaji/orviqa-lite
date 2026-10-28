@@ -43,15 +43,15 @@ These apply to everything you write in this skill.
 
 ## Step 1: Health check
 
-Run the bundled script (in the `scripts/` folder next to this file) with the
-repository root as its argument:
+Run the bundled script with the repository root as its argument. The script
+is `scripts/health_check.py`, relative to the folder this SKILL.md is in:
 
 ```bash
-python3 ${CLAUDE_SKILL_DIR}/scripts/health_check.py <repository-root>
+python3 <this-skill-folder>/scripts/health_check.py <repository-root>
 ```
 
-`${CLAUDE_SKILL_DIR}` is this skill's folder. If your agent does not fill it
-in, use the path of the folder this file is in.
+In Claude Code the folder is `${CLAUDE_SKILL_DIR}`. In other agents, use the
+folder this file was loaded from (for example `.agents/skills/orviqa-lite`).
 
 It checks the files that are there (README, LICENSE, CONTRIBUTING, tests, CI,
 docs, examples and so on). If the `gh` CLI is installed and signed in, it also
