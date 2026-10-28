@@ -1,6 +1,6 @@
 ---
 name: orviqa-lite
-description: Audit an open-source repository for adoption readiness before promoting it. Runs a deterministic health check, audits the README against a fixed rubric, and writes evidence-backed positioning (tagline, GitHub About description, topics). Use when a maintainer asks to review their README, check whether a repo is ready to launch or promote, improve discoverability, or write a project description or tagline.
+description: Use when the user asks whether their open-source repository is ready to promote or launch, asks to audit or review their README, or asks for a GitHub description, tagline or topics. Triggers include "is this repo ready to promote", "audit my README", "review my README before launch", "write a GitHub description for this project", "improve discoverability". Runs a deterministic health check, audits the README against an eleven-area rubric, and writes evidence-backed positioning.
 ---
 
 # Orviqa Lite
