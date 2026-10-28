@@ -3,9 +3,24 @@
   "displayName": "Orviqa Lite",
   "version": "0.1.0",
   "description": "Is your open-source repo ready to promote? A health check, a README audit against an eleven-area rubric, and evidence-backed positioning, all run locally by your own agent.",
-  "author": { "name": "Orviqa", "url": "https://orviqa.dev" },
+  "author": {
+    "name": "Orviqa",
+    "url": "https://orviqa.dev"
+  },
   "homepage": "https://orviqa.dev/lite?utm_source=orviqa-lite&utm_medium=plugin&utm_campaign=lite-homepage",
   "repository": "https://github.com/uoparaji/orviqa-lite",
   "license": "MIT",
-  "keywords": ["readme", "open-source", "launch", "developer-relations", "github", "audit", "positioning"]
+  "keywords": [
+    "readme",
+    "open-source",
+    "launch",
+    "developer-relations",
+    "github",
+    "audit",
+    "positioning"
+  ],
+  "documentationUrl": "https://github.com/uoparaji/orviqa-lite#readme",
+  "supportUrl": "https://github.com/uoparaji/orviqa-lite/issues",
+  "privacyPolicyUrl": "https://orviqa.dev/privacy",
+  "termsOfServiceUrl": "https://orviqa.dev/terms"
 }
